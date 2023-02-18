@@ -21,7 +21,7 @@
                 <h1 class="text-gray-500">Geometry Genius</h1>
             </div>
             <div class="nav-btn">
-                <button class="bg-sky-500 py-1 px-3 text-white font-bold rounded-md">Blog</button>
+                <button class="bg-sky-500 py-1 px-3 text-white font-bold rounded-md" id="blog-btn">Blog</button>
             </div>
         </nav>
     </header>
@@ -96,8 +96,8 @@
                 </div>
                 <div class="h-3/6">
                     <h1 class="font-bold my-2">Rhombus</h1>
-                    <p class="mb-2">Area{A}=0.5* b*h</p>
-                    <p class="mb-2">b=<span>4</span>cm h=<span>6</span>cm </p>
+                    <p class="mb-2">Area{A}=0.5* d1*d2</p>
+                    <p class="mb-2">d1=<span>4</span>cm d2=<span>6</span>cm </p>
                     <div>
                         <label for=""><input type="number" class="w-16 bg-gray-100 rounded-md px-2 m-1" id="rhombus-d1"
                                 placeholder="d1">cm</label>
@@ -125,7 +125,7 @@
                                 placeholder="b">cm</label> <button class="bg-gray-100 rounded-md">✔</button>
                     </div>
                     <button class="bg-blue-600 block mx-auto w-4/5 rounded-lg py-1 mt-7"
-                        id="calculate-Parallelogram">Calculate</button>
+                        id="calculate-pentagon">Calculate</button>
                 </div>
             </div>
 
@@ -149,12 +149,12 @@
                 </div>
             </div>
 
-
         </div>
+
         <div
-            class="result border-2  m-2 p-5 text-center flex w-11/12 lg:w-1/4 h-auto flex-col lg:h-5/6 lg:fixed lg:top-[105px] lg:right-8">
+            class="result border-2  m-2 p-2 text-center flex w-11/12 lg:w-1/4 h-auto flex-col lg:h-5/6 lg:fixed lg:top-[105px] lg:right-8">
             <h1 class="font-bold underline ">Area Calculation</h1>
-            <div id="calculate-parent">
+            <div id="area-parent">
 
             </div>
         </div>
