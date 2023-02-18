@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>blog site</title>
+
+</head>
+
+<body class=" w-full max-w-[1180px] mx-auto">
+    <header class="mb-10 sticky top-0">
+        <nav class="flex justify-between py-2 px-10 items-center bg-blue-200 mx-auto rounded-lg">
+            <div class="nav-title">
+
+                <h1 class="text-2xl font-bold text-gray-900">Interactive <span class="text-purple-500">Blogs</span>
+                </h1>
+
+            </div>
+            <div class="nav-btn">
+                <button class="bg-sky-500 py-1 px-3 text-white font-bold rounded-md">Home</button>
+            </div>
+        </nav>
+    </header>
+    <main class="border border-blue-200 p-3 m-3 ">
+        <section id="questions " class="bg-gray-100 p-2 ">
+            <div class="question">
+                <h1 class="text-2xl text-purple-500 font-semibold">1. <span class="text-red-400 font-normal">What is DOM
+                        and what is the purpose of DOM?</span></h1>
+                <p class="shadow-lg w-11/12 my-5 p-2"> <span class="font-semibold underline "> DOM :</span>
+                    The full form of DOM is (The Document Object Model).DOM is a programming interface for a web
+                    document. basically DOM represents the document as nodes snd object , that way , programming
+                    languages can able to interact with the web page or web web application
+                    <br>
+
+
+                    <span class="font-semibold underline ">PURPOSE DOM :</span> DOM uses for creating or building
+                    document , navigation the structure. Added or modify or delete elements and content from html
+                    document
+                </p>
+            </div>
+
+            <div class="question">
+                <h1 class="text-2xl text-purple-500 font-semibold">2. <span class="text-red-400 font-normal">How will
+                        you select HTML elements using DOM? Name the DOM methods</span></h1>
+                <div class="shadow-lg w-11/12 my-5 p-2">
+                    <p> <span class="font-semibold underline "> Way of selecting html
+                            elements by DOM :</span>
+                        There are many way to select the html elements like.
+                        <br>
+                        <span>
+                            The single element selectors are:
+
+                            <ol>
+                                <li> 1.getElementById()</li>
+                                <li> 2.querySelector()</li>
+                            </ol>
+
+
+                            The multiple element selectors are:
+                            <ol>
+                                <li>1.getElementsByTagName() </li>
+                                <li>2.getElementsByClassName()</li>
+                                <li>3. querySelectorAll()</li>
+                            </ol>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="question">
+                <h1 class="text-2xl text-purple-500 font-semibold">3. <span class="text-red-400 font-normal">What is
+                        event bubble?</span></h1>
+                <p class="shadow-lg w-11/12 my-5 p-2"> <span class="font-semibold underline "> Event Bubble :</span>
+                    Event Bubble ,is a concept of DOM . event bubble happens when en element receive a event and it up
+                    to it's parent in the DOM tree until it gets to the root element,
+
+                </p>
+            </div>
+            <div class="question">
+                <h1 class="text-2xl text-purple-500 font-semibold">4. <span class="text-red-400 font-normal">What is a
+                        callback function and why will you use it?</span></h1>
+                <p class="shadow-lg w-11/12 my-5 p-2"> <span class="font-semibold underline "> Call BAck function
+                        :</span>
+                    callback function is function that waiting for another function executing before executing itself.
+                    a function like a object in javascript .for this ,function can take other function as a arguments
+                    and also can return by another function.
+                    when a function take or call another function as a argument or return a function as result, that
+                    function called a higher-order function.
+                    Any function that is passed as an arguments is called a callback function
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
