@@ -16,10 +16,7 @@ function setText(fieldId, filedText) {
     const fieldName = document.getElementById(fieldId);
     fieldName.innerText = filedText;
 
-};
-
-
-
+}
 
 /*  calculation  */
 function calculation(shapeName) {
@@ -76,6 +73,7 @@ function calculation(shapeName) {
     }
 
 }
+
 /* create element and added*/
 function createNadAdded() {
     const parentElement = document.getElementById('area-parent');
@@ -87,7 +85,17 @@ function createNadAdded() {
 }
 
 
+/*random color creator */
+function colorChanger(cardId) {
+    document.getElementById(cardId).addEventListener('mouseenter', function () {
+        const colorCreator = `#${Math.random().toString(16).slice(2, 8).padEnd(6, 0)}`;
+       document.getElementById(cardId).style.backgroundColor = colorCreator;
+    })
 
+    document.getElementById(cardId).addEventListener('mouseleave', function () {
+        document.getElementById(cardId).style.backgroundColor = 'white';
+    })
+}
 
 
 

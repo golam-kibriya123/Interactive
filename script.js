@@ -16,6 +16,16 @@ btnEvent('calculate-ellipse', 'ellipse');
 
 
 
+colorChanger('card1');
+colorChanger('card2');
+colorChanger('card3');
+colorChanger('card4');
+colorChanger('card5');
+colorChanger('card6');
+
+
+
+
 
 
 
