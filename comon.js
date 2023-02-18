@@ -34,6 +34,28 @@ function calculation(shapeName) {
         console.log(triangleArea);
         return triangleArea;
     }
+    else if (shapeName === 'rhombus') {
+        const base = takeValueById('rhombus-d1');
+        const height = takeValueById('rhombus-d2');
+        const triangleArea =  base * height;
+        console.log(triangleArea);
+        return triangleArea;
+    }
+    else if (shapeName === 'pentagon') {
+        const base = takeValueById('pentagon-p');
+        const height = takeValueById('pentagon-b');
+        const triangleArea =  0.5*base * height;
+        console.log(triangleArea);
+        return triangleArea;
+    }
+    
+    else if (shapeName === 'ellipse') {
+        const base = takeValueById('ellipse-a"');
+        const height = takeValueById('ellipse-b');
+        const triangleArea = 3.1416*base * height;
+        console.log(triangleArea);
+        return triangleArea;
+    }
     
 }
 

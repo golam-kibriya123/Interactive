@@ -13,15 +13,22 @@
 <body class="m-0 p-0">
 
 
-    <header>
-        <nav>
+    <header class="mb-10 sticky top-0">
+        <nav class="flex justify-between py-2 px-10 items-center w-full max-w-[1180px] bg-blue-200 mx-auto rounded-lg">
+            <div class="nav-title">
 
+                <h1 class="text-3xl font-bold text-gray-900">Interactive </h1>
+                <h1 class="text-gray-500">Geometry Genius</h1>
+            </div>
+            <div class="nav-btn">
+                <button class="bg-sky-500 py-1 px-3 text-white font-bold rounded-md">Blog</button>
+            </div>
         </nav>
     </header>
 
 
     <main class="w-full flex flex-col items-center  lg:flex-row ">
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5  text-center w-8/12 lg:ml-11 ">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5  text-center w-8/12 lg:ml-10 ">
             <div class="border p-2  h-[450px]">
                 <div class="h-3/6">
                     <img src="./images/triangle.png" alt="" class="mx-auto pt-7 ">
@@ -98,7 +105,7 @@
                                 placeholder="d2">cm</label> <button class="bg-gray-100 rounded-md">✔</button>
                     </div>
                     <button class="bg-blue-600 block mx-auto w-4/5 rounded-lg py-1 mt-7"
-                        id="calculate-Parallelogram">Calculate</button>
+                        id="calculate-rhombus">Calculate</button>
                 </div>
             </div>
 
@@ -145,7 +152,7 @@
 
         </div>
         <div
-            class="result border-2  m-2 p-5 text-center flex sm:w-11/12 lg:w-1/4 sm:h-auto flex-col lg:h-5/6 lg:fixed lg:top-0 lg:right-8">
+            class="result border-2  m-2 p-5 text-center flex w-11/12 lg:w-1/4 h-auto flex-col lg:h-5/6 lg:fixed lg:top-[105px] lg:right-8">
             <h1 class="font-bold underline ">Area Calculation</h1>
             <div id="calculate-parent">
 
