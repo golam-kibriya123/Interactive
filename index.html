@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="m-0 p-0">
 
 
     <header>
@@ -20,9 +20,107 @@
     </header>
 
 
-    <main class="">
+    <main class="w-full flex flex-col items-center  lg:flex-row ">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 bg-blue-700  text-center w-8/12 lg:ml-11 ">
+            <div class="bg-green-600  h-[450px]">
+                <img src="./images/triangle.png" alt="" class="mx-auto pt-8">
 
+                <h1 class="font-bold my-2">Triangle</h1>
+                <p class="mb-2">Area{A}= 0.5*b*h</p>
+                <p class="mb-2">b=<span>4</span>cm h=<span>6</span>cm </p>
+                <div>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="triangle-b"
+                            placeholder="b">cm</label>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="triangle-h"
+                            placeholder="h">cm</label> <button class="bg-orange-300 px-2 rounded-md">✔</button>
+                </div>
+                <button class="bg-blue-600 block mx-auto w-4/5 rounded-lg py-1 mt-7" id="calculate-triangle">Calculate</button>
+            </div>
+
+            <div class="bg-green-600   h-[450px]">
+                <img src="./images/rectangle.png" alt="" class="mx-auto pt-8">
+
+                <h1 class="font-bold my-2">Rectangle</h1>
+                <p class="mb-2">Area{A}= w*l</p>
+                <p class="mb-2">w=<span>4</span>cm l=<span>6</span>cm </p>
+                <div>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="rectangle-w"
+                            placeholder="w">cm</label>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="rectangle-l"
+                            placeholder="l">cm</label> <button class="bg-orange-300 px-2 rounded-md">✔</button>
+                </div>
+                <button class="bg-blue-600 block mx-auto w-4/5 rounded-lg py-1 mt-7" id="calculate-rectangle">Calculate</button>
+            </div>
+
+            <div class="bg-green-600  h-[450px]">
+                <img src="./images/parallelogram.png" alt="" class="mx-auto pt-8">
+
+                <h1 class="font-bold my-2">Parallelogram</h1>
+                <p class="mb-2">Area{A}= b*h</p>
+                <p class="mb-2">b=<span>4</span>cm h=<span>6</span>cm </p>
+                <div>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="Parallelogram-b"
+                            placeholder="b">cm</label>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="Parallelogram-h"
+                            placeholder="h">cm</label> <button class="bg-orange-300 px-2 rounded-md">✔</button>
+                </div>
+                <button class="bg-blue-600 block mx-auto w-4/5 rounded-lg py-1 mt-7" id="calculate-Parallelogram">Calculate</button>
+            </div>
+
+            <div class="bg-green-600   h-[450px]">
+                <img src="./images/rhombus.png" alt="" class="mx-auto pt-8">
+
+                <h1 class="font-bold my-2">Rhombus</h1>
+                <p class="mb-2">Area{A}=0.5* b*h</p>
+                <p class="mb-2">b=<span>4</span>cm h=<span>6</span>cm </p>
+                <div>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="rhombus-d1"
+                            placeholder="d1">cm</label>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="rhombus-d2"
+                            placeholder="d2">cm</label> <button class="bg-orange-300 px-2 rounded-md">✔</button>
+                </div>
+                <button class="bg-blue-600 block mx-auto w-4/5 rounded-lg py-1 mt-7" id="calculate-Parallelogram">Calculate</button>
+            </div>
+            <div class="bg-green-600  h-[450px]">
+                <img src="./images/pentagon.png" alt="" class="mx-auto pt-8">
+
+                <h1 class="font-bold my-2">Pentagon</h1>
+                <p class="mb-2">Area{A}= 0.5*p*b</p>
+                <p class="mb-2">p=<span>4</span>cm b=<span>6</span>cm </p>
+                <div>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="pentagon-p"
+                            placeholder="p">cm</label>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="pentagon-b"
+                            placeholder="b">cm</label> <button class="bg-orange-300 px-2 rounded-md">✔</button>
+                </div>
+                <button class="bg-blue-600 block mx-auto w-4/5 rounded-lg py-1 mt-7" id="calculate-Parallelogram">Calculate</button>
+            </div>
+
+            <div class="bg-green-600   h-[450px]">
+                <img src="./images/ellipse.png" alt="" class="mx-auto pt-8">
+
+                <h1 class="font-bold my-2">Parallelogram</h1>
+                <p class="mb-2">Area{A}= 3.1416*b*h</p>
+                <p class="mb-2">a=<span>4</span>cm b=<span>6</span>cm </p>
+                <div>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="ellipse-a"
+                            placeholder="a">cm</label>
+                    <label for=""><input type="number" class="w-20 rounded-md px-2 m-1" id="ellipse-b"
+                            placeholder="b">cm</label> <button class="bg-orange-300 px-2 rounded-md">✔</button>
+                </div>
+                <button class="bg-blue-600 block mx-auto w-4/5 rounded-lg py-1 mt-7" id="calculate-ellipse">Calculate</button>
+            </div>
+
+
+        </div>
+        <div class="result border-2  m-2 p-5 text-center flex sm:w-11/12 lg:w-1/4 sm:h-auto flex-col lg:h-screen lg:fixed lg:top-0 lg:right-8 ">
+            <h1 class="font-bold underline ">Area Calculation</h1>
+            <div id="calculate-parent">
+
+            </div>
+        </div>
     </main>
+    <script src="comon.js"></script>
     <script src="script.js"></script>
 </body>
 
