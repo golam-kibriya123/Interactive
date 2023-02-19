@@ -15,7 +15,7 @@ function stringTONumber(stringValue) {
 /*negative number or string checker */
 function isOk(inputValue) {
     if (isNaN(inputValue) == true || inputValue <= 0) {
-        return alert('please input a positive number')
+        return alert('please input a positive number');
     }
     else {
         titleManager('title1');
@@ -23,6 +23,23 @@ function isOk(inputValue) {
         console.log(typeof (inputValue))
     }
 
+}
+/*set as inner text and clear input field*/
+function setInnerText(inputId1, inputId2) {
+
+
+    let firstINput = stringTONumber(inputId1)
+
+    let base = takeById(inputId2);
+    if (firstINput <= 0 || isNaN(firstINput) === true) {
+        return 0;
+    }
+    else {
+        base.innerText = firstINput;
+        document.getElementById(inputId1).value = "";
+        return base;
+
+    }
 }
 
 /*button event*/
