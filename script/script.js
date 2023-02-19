@@ -44,10 +44,10 @@ function areaCalculation(shapeName) {
         isOk(area);
     }
     else if (shapeName === 'pentagon') {
-        const base = stringTONumber('pentagon-p', 'pentagon2-p');
+        const base = setInnerText('pentagon-p', 'pentagon2-p');
 
 
-        let height = stringTONumber('pentagon-b', 'pentagon2-b');
+        const height = setInnerText('pentagon-b', 'pentagon2-b');
 
         const area = 0.5 * base.innerText * height.innerText;
 

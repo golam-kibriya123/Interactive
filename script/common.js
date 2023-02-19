@@ -20,7 +20,7 @@ function isOk(inputValue) {
     else {
         titleManager('title1');
         createNadAdded(inputValue.toFixed(2));
-        console.log(typeof (inputValue))
+
     }
 
 }
