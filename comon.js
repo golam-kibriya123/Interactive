@@ -1,124 +1,75 @@
 
-/* take value from input and convert this integer type number into string type number. also give a alert when the input dose not a number*/
+/*take by id*/
+function takeById(idName) {
+    const idName2 = document.getElementById(idName);
+    return idName2;
+}
+/*take input and convert string to number*/
+function stringTONumber(stringValue) {
+    const inputString = document.getElementById(stringValue);
+    const inputStringValue = inputString.value;
+    const numberValue = parseInt(inputStringValue);
+    return numberValue;
+}
 
-function takeValueById(InputId) {
-    const stringTypeValue = document.getElementById(InputId).value;
-    if (isNaN(stringTypeValue) || stringTypeValue <= 0) {
-        alert('please inter a positive number or greater than 0')
+/*negative number or string checker */
+function isOk(inputValue) {
+    if (isNaN(inputValue) == true || inputValue <= 0) {
+        return alert('please input a positive number')
     }
     else {
-        const numberTypeValue = parseFloat(stringTypeValue);
-        return numberTypeValue;
-    }
-}
-/* set inner text  */
-function setText(fieldId, filedText) {
-    const fieldName = document.getElementById(fieldId);
-    fieldName.innerText = filedText;
-
-}
-
-/*  calculation  */
-function calculation(shapeName) {
-    if (shapeName === 'triangle') {
-        const base = takeValueById('triangle-b');
-        const height = takeValueById('triangle-h');
-        const triangleArea = 0.5 * base * height;
-        createNadAdded();
-        setText('area-value', triangleArea);
-
-        return triangleArea;
-    }
-    else if (shapeName === 'rectangle') {
-        const rectangleW = takeValueById('rectangle-w');
-        const rectangleL = takeValueById('rectangle-l');
-        const rectangle = rectangleW * rectangleL;
-        createNadAdded();
-        setText('area-value', rectangle);
-        return rectangle;
-    }
-    else if (shapeName === 'Parallelogram') {
-        const ParallelogramB = takeValueById('Parallelogram-b');
-        const ParallelogramH = takeValueById('Parallelogram-h');
-        const ParallelogramArea = ParallelogramB * ParallelogramH;
-        createNadAdded();
-        setText('area-value', ParallelogramArea);
-        return ParallelogramArea;
-    }
-    else if (shapeName === 'rhombus') {
-        const rhombusD1 = takeValueById('rhombus-d1');
-        const rhombusD2 = takeValueById('rhombus-d2');
-        const rhombusArea = rhombusD1 * rhombusD2;
-        createNadAdded();
-        setText('area-value', rhombusArea);
-        return rhombusArea;
-    }
-    else if (shapeName === 'pentagon') {
-        const pentagonP = takeValueById('pentagon-p');
-        const pentagonB = takeValueById('pentagon-b');
-        const pentagonArea = 0.5 * pentagonB * pentagonP;
-        createNadAdded();
-        setText('area-value', pentagonArea);
-        return pentagonArea;
-    }
-
-    else if (shapeName === 'ellipse') {
-        const ellipseA = takeValueById('ellipse-a');
-        const ellipseB = takeValueById('ellipse-b');
-        const ellipseArea = ellipseA * ellipseB;
-        createNadAdded();
-        setText('area-value', ellipseArea);
-
-        return ellipseArea;
+        titleManager('title1');
+        createNadAdded(inputValue.toFixed(2));
+        console.log(typeof (inputValue))
     }
 
 }
 
+/*button event*/
+function btnEvent(id, shapeName) {
+    document.getElementById(id).addEventListener('click', function () {
+
+        areaCalculation(shapeName);
+
+
+    });
+}
+
+/*title*/
+let newTitle = '';
+function titleManager(titleId) {
+    const getTitle = document.getElementById(titleId);
+    newTitle = getTitle.innerText;
+    return newTitle;
+
+}
+/*serial number*/
+let number = 0;
+
+function serial() {
+    do {
+        number++;
+    }
+    while (number < 1);
+    return number;
+}
 /* create element and added*/
-function createNadAdded() {
+function createNadAdded(innerValue) {
     const parentElement = document.getElementById('area-parent');
     const childElement = document.createElement("div")
     childElement.classList.add('flex', 'justify-between', 'mt-4');
-    childElement.innerHTML = ` <p> Triangle <span id="area-value" class="ml-3"></span>cm<sup>2</sup> </p>
+    childElement.innerHTML = ` <p class="text-sm" >${serial()}. ${newTitle} <span id="area-value" class="ml-2">${innerValue}</span>cm<sup>2</sup> </p>
     <button class="bg-sky-600 px-3 py-1 rounded-md text-white text-sm">Convert to m<sup>2</sup></button>`;
     parentElement.appendChild(childElement);
 }
-
 
 /*random color creator */
 function colorChanger(cardId) {
     document.getElementById(cardId).addEventListener('mouseenter', function () {
         const colorCreator = `#${Math.random().toString(16).slice(2, 8).padEnd(6, 0)}`;
-       document.getElementById(cardId).style.backgroundColor = colorCreator;
-    })
-
-    document.getElementById(cardId).addEventListener('mouseleave', function () {
-        document.getElementById(cardId).style.backgroundColor = 'white';
+        document.getElementById(cardId).style.backgroundColor = colorCreator;
+        document.getElementById(cardId).addEventListener('mouseleave', function () {
+            document.getElementById(cardId).style.backgroundColor = 'white';
+        })
     })
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*navigation control*/
-document.getElementById('blog-btn').addEventListener('click', function () {
-
-    window.location.href = "http://127.0.0.1:5500/blog.html"
-
-})

@@ -28,21 +28,25 @@
 
 
     <main class="w-full flex flex-col items-center  lg:flex-row ">
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5  text-center w-8/12 lg:ml-10 " id="all-card">
-          
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5  text-center w-8/12 lg:ml-10 "
+            id="all-card">
+
             <div class="border p-2  h-[450px]" id="card6">
                 <div class="h-3/6">
                     <img src="./images/triangle.png" alt="" class="mx-auto pt-7 ">
                 </div>
                 <div class="h-3/6">
-                    <h1 class="font-bold my-2">Triangle</h1>
+                    <h1 class="font-bold my-2" id="title1">Triangle</h1>
                     <p class="mb-2">Area{A}= 0.5*b*h</p>
-                    <p class="mb-2">b=<span>4</span>cm h=<span>6</span>cm </p>
+                    <p class="mb-2">b=<span id="triangle2-b">00</span>cm h=<span id="triangle2-h">00</span>cm
+                        <button><img src="./images/edit.svg" alt="" class="inline h-3"></button>
+                    </p>
                     <div>
                         <label for=""><input type="number" class="w-16 rounded-md px-2 m-1 bg-gray-100" id="triangle-b"
                                 placeholder="b">cm</label>
                         <label for=""><input type="number" class="w-16 rounded-md px-2 m-1 bg-gray-100" id="triangle-h"
-                                placeholder="h">cm</label> <button class=" bg-gray-100 rounded-md">✔</button>
+                                placeholder="h">cm</label>
+                        <button class=" bg-gray-100 rounded-md">✔</button>
                     </div>
                     <button class="bg-blue-600 block mx-auto w-4/5 rounded-lg py-1 mt-7"
                         id="calculate-triangle">Calculate</button>
@@ -55,9 +59,11 @@
                 </div>
 
                 <div class="h-3/6">
-                    <h1 class="font-bold my-2">Rectangle</h1>
+                    <h1 class="font-bold my-2" id="title2">Rectangle</h1>
                     <p class="mb-2">Area{A}= w*l</p>
-                    <p class="mb-2">w=<span>4</span>cm l=<span>6</span>cm </p>
+                    <p class="mb-2">w=<span id="rectangle2-w">4</span>cm l=<span id="rectangle2-l">6</span>cm
+                        <button><img src="./images/edit.svg" alt="" class="inline h-3"></button>
+                    </p>
                     <div>
                         <label for=""><input type="number" class="w-16 bg-gray-100 rounded-md px-2 m-1" id="rectangle-w"
                                 placeholder="w">cm</label>
@@ -75,9 +81,11 @@
 
                 </div>
                 <div class="h-3/6">
-                    <h1 class="font-bold my-2">Parallelogram</h1>
+                    <h1 class="font-bold my-2" id="title3">Parallelogram</h1>
                     <p class="mb-2">Area{A}= b*h</p>
-                    <p class="mb-2">b=<span>4</span>cm h=<span>6</span>cm </p>
+                    <p class="mb-2">b=<span id="Parallelogram2-b">4</span>cm h=<span id="Parallelogram2-h">6</span>cm
+                        <button><img src="./images/edit.svg" alt="" class="inline h-3"></button>
+                    </p>
                     <div>
                         <label for=""><input type="number" class="w-16 bg-gray-100 rounded-md px-2 m-1"
                                 id="Parallelogram-b" placeholder="b">cm</label>
@@ -96,9 +104,11 @@
 
                 </div>
                 <div class="h-3/6">
-                    <h1 class="font-bold my-2">Rhombus</h1>
+                    <h1 class="font-bold my-2" id="title4">Rhombus</h1>
                     <p class="mb-2">Area{A}=0.5* d1*d2</p>
-                    <p class="mb-2">d1=<span>4</span>cm d2=<span>6</span>cm </p>
+                    <p class="mb-2">d1=<span id="rhombus2-d1">4</span>cm d2=<span id="rhombus2-d2">6</span>cm
+                        <button><img src="./images/edit.svg" alt="" class="inline h-3"></button>
+                    </p>
                     <div>
                         <label for=""><input type="number" class="w-16 bg-gray-100 rounded-md px-2 m-1" id="rhombus-d1"
                                 placeholder="d1">cm</label>
@@ -116,9 +126,10 @@
                 </div>
 
                 <div class="h-3/6">
-                    <h1 class="font-bold my-2">Pentagon</h1>
+                    <h1 class="font-bold my-2" id="title5">Pentagon</h1>
                     <p class="mb-2">Area{A}= 0.5*p*b</p>
-                    <p class="mb-2">p=<span>4</span>cm b=<span>6</span>cm </p>
+                    <p class="mb-2">p=<span id="pentagon2-p">4</span>cm b=<span id="pentagon2-b">6</span>cm <button><img
+                                src="./images/edit.svg" alt="" class="inline h-3"></button> </p>
                     <div>
                         <label for=""><input type="number" class="w-16 bg-gray-100 rounded-md px-2 m-1" id="pentagon-p"
                                 placeholder="p">cm</label>
@@ -136,9 +147,10 @@
                 </div>
 
                 <div class="h-3/6">
-                    <h1 class="font-bold my-2">Parallelogram</h1>
+                    <h1 class="font-bold my-2" id="title6">Ellipse</h1>
                     <p class="mb-2">Area{A}= 3.1416*b*h</p>
-                    <p class="mb-2">a=<span>4</span>cm b=<span>6</span>cm </p>
+                    <p class="mb-2">a=<span id="ellipse2-a">4</span>cm b=<span id="ellipse2-b">6</span>cm <button><img
+                                src="./images/edit.svg" alt="" class="inline h-3"></button> </p>
                     <div>
                         <label for=""><input type="number" class="w-16 bg-gray-100 rounded-md px-2 m-1" id="ellipse-a"
                                 placeholder="a">cm</label>
@@ -155,13 +167,17 @@
         <div
             class="result border-2  m-2 p-2 text-center flex w-11/12 lg:w-1/4 h-auto flex-col lg:h-5/6 lg:fixed lg:top-[105px] lg:right-8">
             <h1 class="font-bold underline ">Area Calculation</h1>
-            <div id="area-parent">
-
+            <div id="area-parent" class="overflow-y-scroll">
+                <!-- <div class="flex justify-between mt-4">
+                    <p>1. Triangle <span id="triangle-area-value" class="ml-3">$</span>cm<sup>2</sup> </p>
+                    <button class="bg-sky-600 px-3 py-1 rounded-md text-white text-sm">Convert to m<sup>2</sup></button>
+                </div> -->
             </div>
         </div>
     </main>
-    <script src="comon.js"></script>
-    <script src="script.js"></script>
+    <script src="common.js"></script>
+    <script type="text/javascript" src="./comon.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
